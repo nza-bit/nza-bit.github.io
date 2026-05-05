@@ -5,49 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziang Niu - Experience</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 复用分类标题的样式，保持网站整体风格统一 */
+        .exp-category {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--section-border);
+            padding-bottom: 5px;
+        }
+        .exp-category:first-of-type {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-brand"><a href="index.html">Ziang Niu</a></div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="education.html">Education</a>
             <a href="publications.html">Publications</a>
-            <a href="experience.html">Experience</a>
+            <a href="experience.html" class="active">Experience</a>
             <a href="honors&awards.html">Honors & Awards</a>
         </div>
     </nav>
 
     <section id="experience">
-        <h1 class="page-title">Research Experience & Projects</h1>
+        <h1 class="page-title">Programs & Projects</h1>
+
+        <h2 class="exp-category">Programs</h2>
 
         <div class="cv-item">
-            <div class="date">202X - Present</div>
+            <div class="date">Jan. 2026 - Jan. 2026</div>
             <div class="content">
-                <h3>Multimodal Medical Image Segmentation & Agent Development</h3>
-                <p class="highlight">Research Assistant | Beijing Institute of Technology</p>
+                <h3>VocabMate: English Vocabulary Learning iOS App Based on Qwen LLM</h3>
+                <p class="highlight">Team Leader | Nanyang Technological University</p>
                 <ul>
-                    <li>Conducted in-depth research on medical image segmentation algorithms, focusing on improving model generalization capabilities under few-shot scenarios using contrastive learning mechanisms.</li>
-                    <li>Developed and integrated advanced AI toolchains into the R&D pipeline.</li>
-                    <li>Utilized Weights & Biases (W&B) for comprehensive experiment tracking, significantly optimizing the development efficiency of AI Agents.</li>
+                    <li>Architected the layered structure of the iOS app, including Models, Services, Views and Theme modules.</li>
+                    <li>Developed core business modules: built the vocabulary management, AI chat, and quiz practice views using SwiftUI.</li>
+                    <li>Integrated backend services: implemented the Qwen AI API service for intelligent interactions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="exp-category">Projects</h2>
+
+        <div class="cv-item">
+            <div class="date">Sep. 2025 - May. 2026</div>
+            <div class="content">
+                <h3>Empirical Study on Stock Index Prediction Based on SCA-LSTM</h3>
+                <p class="highlight">Graduation Project</p>
+                <ul>
+                    <li>Constructed a multi-dimensional feature system with price-volume, macroeconomic and technical indicators.</li>
+                    <li>Extracted key features using the Top-k intersection of random forest dual importance.</li>
+                    <li>Optimized [Sine Cosine Algorithm (SCA)]'s population iteration and parameter update strategy by introducing chaotic mapping and nonlinear decreasing equations.</li>
+                    <li>Optimized LSTM hyperparameters with SCA (Shanghai Composite Index as object) for closing price prediction.</li>
+                    <li>Conducted horizontal/vertical verification with ARIMA, Random Forest, XGBoost and basic LSTM.</li>
                 </ul>
             </div>
         </div>
 
         <div class="cv-item">
-            <div class="date">202X - 202X</div>
+            <div class="date">Apr. 2024 - May. 2024</div>
             <div class="content">
-                <h3>SCA-LSTM Based Stock Index Prediction Model</h3>
-                <p class="highlight">Independent Project</p>
+                <h3>HR Management Database System Based on Huawei GaussDB</h3>
+                <p class="highlight">Individual Project</p>
                 <ul>
-                    <li>Focused on time series analysis in the financial domain.</li>
-                    <li>Designed and implemented an LSTM (Long Short-Term Memory) model integrated with a Spatial Co-Attention (SCA) mechanism.</li>
-                    <li>Successfully captured and predicted complex sequential patterns within financial market indices, improving prediction accuracy over baseline models.</li>
+                    <li>Independently designed and implemented a multi-role human resource management database system.</li>
+                    <li>Built core architecture with Huawei GaussDB and developed data interaction interfaces via Python.</li>
+                    <li>Completed table structure design and wrote full-process SQL statements.</li>
                 </ul>
             </div>
         </div>
-    </section>
+        
+        </section>
 
     <footer>
         <p>&copy; 2026 Ziang Niu.</p>
