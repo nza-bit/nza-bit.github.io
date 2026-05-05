@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziang Niu - Publications</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 针对分类标题的微调，使其在论文列表中看起来更协调 */
+        .pub-category {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--section-border);
+            padding-bottom: 5px;
+        }
+        /* 如果第一类上方距离过大，可以取消上边距 */
+        .pub-category:first-of-type {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-brand"><a href="index.html">Ziang Niu</a></div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="education.html">Education</a>
-            <a href="publications.html">Publications</a>
+            <a href="publications.html" class="active">Publications</a>
             <a href="experience.html">Experience</a>
             <a href="honors&awards.html">Honors & Awards</a>
         </div>
@@ -23,14 +39,53 @@
         <h1 class="page-title">Publications</h1>
         <p><em>* indicates equal contribution.</em></p>
         
+        <h2 class="pub-category">Journals</h2>
+        
+        <div class="cv-item">
+            <div class="date">202X</div>
+            <div class="content">
+                <h3>[Journal Paper Title: e.g., Advanced Medical Image Segmentation]</h3>
+                <p><strong>Ziang Niu</strong>, [Co-author Name], [Advisor Name].</p>
+                <p class="pub-venue">Published in [Journal Name, e.g., IEEE Transactions on Medical Imaging]</p>
+                <div class="pub-links">
+                    <a href="#" target="_blank">[PDF]</a>
+                    <a href="#" target="_blank">[Code]</a>
+                    <a href="#" target="_blank">[Dataset]</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="pub-category">Conference Papers</h2>
+        
+        <div class="cv-item">
+            <div class="date">202X</div>
+            <div class="content">
+                <h3>[Conference Paper Title: e.g., Multi-modal AI for Diagnostics]</h3>
+                <p>[Co-author Name]*, <strong>Ziang Niu*</strong>, [Advisor Name].</p>
+                <p class="pub-venue">In Proceedings of [Conference Name, e.g., MICCAI 2026]</p>
+                <div class="pub-links">
+                    <a href="#" target="_blank">[PDF]</a>
+                    <a href="#" target="_blank">[Project Page]</a>
+                    <a href="#" target="_blank">[Video]</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="pub-category">Preprints</h2>
+        
         <div class="cv-item">
             <div class="date">In Prep</div>
             <div class="content">
-                <h3>[Paper Title: e.g., A Novel Contrastive Learning Approach for Medical Image Segmentation]</h3>
+                <h3>[Preprint Title: e.g., A Novel Contrastive Learning Approach for Medical Image Segmentation]</h3>
                 <p><strong>Ziang Niu</strong>, [Co-author Name], [Advisor Name].</p>
-                <p class="pub-venue">To be submitted to [Target Conference/Journal]</p>
+                <p class="pub-venue">To be submitted to [Target Conference/Journal] / arXiv preprint</p>
+                <div class="pub-links">
+                    <a href="#" target="_blank">[arXiv]</a>
+                    <a href="#" target="_blank">[GitHub]</a>
+                </div>
             </div>
         </div>
+
     </section>
 
     <footer>
