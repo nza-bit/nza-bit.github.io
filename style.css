@@ -1,0 +1,180 @@
+/* Base and Typography */
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #4a4a4a;
+    --link-color: #0056b3;
+    --link-hover: #003d82;
+    --bg-color: #ffffff;
+    --section-border: #eaeaea;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--section-border);
+}
+.nav-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.nav-brand a:hover {
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    font-weight: 500;
+    color: var(--secondary-color);
+    padding-bottom: 5px;
+}
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Header / Profile Section (Home Page Only) */
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+.profile-text {
+    flex: 1;
+}
+.profile-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.profile-text .title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+.contact-info {
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+.page-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--section-border);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 8px;
+}
+
+/* CV Items (Education, Experience, Publications) */
+.cv-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.cv-item .date {
+    min-width: 140px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.cv-item .content {
+    flex: 1;
+}
+.cv-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.cv-item p {
+    margin: 0 0 5px 0;
+    font-size: 0.95rem;
+}
+.cv-item .highlight {
+    font-weight: bold;
+}
+.pub-venue {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--section-border);
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profile-header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .cv-item {
+        flex-direction: column;
+    }
+    .cv-item .date {
+        margin-bottom: 5px;
+    }
+}
